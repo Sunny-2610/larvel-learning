@@ -9,6 +9,13 @@ Route::get('/', function () {
 
 
 
+//contact page route
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+
 
 
 

@@ -1,19 +1,11 @@
-  
 @extends('layouts.default')
 
+@section('header')
+    <h2>This is contact page </h2>
+@endsection
 
-
-      @section('header')
-        <h2>Laravel Tutorial</h2>
-        @endsection
-
-
-
-
-
-      @section('content') 
-
-      <h1>Home</h1>
+@section('content') 
+    <h1>Home</h1>
     <form action="{{ route('formsubmitted') }}" method="post">
         @csrf
         <label for="fullname">Fullname</label>
@@ -25,15 +17,9 @@
         <br><br>
 
         <button type="submit">Submit</button>
-            </form>
-
-      @endsection
-        
-
-
-    @section('footer')
-
-        <p>Copyright &copy; 2025</p>
-
-       @endsection
+    </form>
+@endsection
     
+@section('footer')
+    <p>Copyright &copy; 2025</p>
+@endsection
