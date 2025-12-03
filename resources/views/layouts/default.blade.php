@@ -6,7 +6,8 @@
     <title>Laravel Tutorial</title>
 </head>
 <body>
-    <header> 
+    <header>
+        //<img src = "{{ asset('images/logo.png') }}" alt="logo">
     @yield('header')
 </header>
 
